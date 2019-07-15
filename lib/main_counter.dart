@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'Counter.dart';
+import 'counter.dart';
 
 void main() => runApp(MyApp());
 
