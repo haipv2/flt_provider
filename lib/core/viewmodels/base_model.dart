@@ -1,3 +1,4 @@
+import 'package:flt_provider/core/enums/view_state.dart';
 import 'package:flutter/foundation.dart';
 
 import 'login_model.dart';

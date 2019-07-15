@@ -1,5 +1,6 @@
 
 
+import 'package:flt_provider/core/enums/view_state.dart';
 import 'package:flt_provider/core/models/post.dart';
 import 'package:flt_provider/core/services/api.dart';
 

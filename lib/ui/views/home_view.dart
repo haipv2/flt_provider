@@ -45,14 +45,12 @@ class HomeView extends StatelessWidget {
                   )));
   }
 
-  Widget getPostsUi(List<Post> posts) {
-    return ListView.builder(
+  Widget getPostsUi(List<Post> posts) => ListView.builder(
         itemCount: posts.length,
         itemBuilder: (context, index) => PostListItem(
               post: posts[index],
               onTap: () {
-                Navigator.pushNamed(context, '/post', arguments: posts[index]);
+                Navigator.pushNamed(context, 'post', arguments: posts[index]);
               },
             ));
-  }
 }

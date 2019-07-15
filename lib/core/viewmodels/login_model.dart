@@ -1,10 +1,10 @@
+import 'package:flt_provider/core/enums/view_state.dart';
 import 'package:flt_provider/core/services/aut_service.dart';
 import 'package:flutter/foundation.dart';
 
 import '../../locator.dart';
 import 'base_model.dart';
 
-enum ViewState{Idle, Busy}
 
 class LoginModel extends BaseModel {
 

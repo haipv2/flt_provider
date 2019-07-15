@@ -1,3 +1,4 @@
+import 'package:flt_provider/core/models/post.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -14,8 +15,9 @@ class Router {
         return MaterialPageRoute(builder: (_) => HomeView());
       case 'login':
         return MaterialPageRoute(builder: (_) => LoginView());
-      case 'posts':
-        return MaterialPageRoute(builder: (_) => PostView());
+      case 'post':
+        var post = settings.arguments as Post;
+        return MaterialPageRoute(builder: (_) => PostView(post: post));
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(

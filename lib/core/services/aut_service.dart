@@ -9,6 +9,7 @@ class AuthenticationService{
   // inject api
   Api _api = locator<Api>();
   StreamController<User> userController = StreamController<User>();
+
   Future<bool> login (int userId) async {
     var fetchedUser = await _api.getUserProfile(userId);
     var hasUser = fetchedUser != null;
